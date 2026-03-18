@@ -79,7 +79,7 @@
                             }</code></pre>
                     </section>
                     
-                    <p>No código acima, utilizamos o seletor "p" para selecionar todos os elementos de parágrafo da página e vamos deixá-los com a cor azul e com uma fonte em negrito.</p>
+                    <p>No código acima, utilizamos o seletor <var>p</var>  para selecionar todos os elementos de parágrafo da página e vamos deixá-los com a cor azul e com uma fonte em negrito.</p>
                     
                     
                     <section>
@@ -87,17 +87,35 @@
                         <h2>Resumo</h2>
                         
                         <p>Confira a tabela abaixo com a abreviação, nome e principal foco da linguagem:</p>
-                        
-                        <p>HTML - HyperText Markup Language - Construção de Páginas</p>
-                        
-                        <p>CSS - Cascading Style Sheets - Estilização de Páginas</p>
-                    </section>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>abreviação</th>
+                                    <th>Nome</th>
+                                    <th>Foco</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>HTML</td>
+                                        <td>HyperText Markup Language</td>
+                                        <td>Construção de Páginas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CSS</td>
+                                        <td>Cascading Style Sheets</td>
+                                        <td>Estilização de Páginas</td>
+                                    </tr>
+                                </tbody>
+                            </thead>
+                        </table>
+                        </section>
 
                     <section>
 
                         <h2>Para mais detalhes</h2>
                         
-                        <p>Um novo contexto de navegação para a página: https://pt.wikipedia.org/wiki/HTML</p>
+                         <iframe src="https://pt.wikipedia.org/wiki/HTML" frameborder="0"></iframe>
                     </section>
 
                     <!-- <aside></aside> -->
@@ -108,15 +126,29 @@
                         
                         <p>Você pode se inscrever para saber mais preenchendo seu nome e e-mail no formulário abaixo:</p>
                         
-                        <p>Nome</p>
-                        
-                        <p>Preencha seu nome</p>
-                        
-                        <p>E-mail</p>
-                        
-                        <p>Preencha seu e-mail</p>
-                        
-                        <p>Enviar!</p>
+                        <form action="">
+                            <div>
+                                <label for="name">Nome</label>
+                                <input 
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Preencha seu nome" 
+                                />
+                            </div>
+                            
+                            <div>
+                                <label for="email">E-mail</label>
+                                <input 
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Preencha seu e-mail" 
+                                />
+                            </div>
+                                                        
+                            <button>Enviar!</button>
+                        </form>
                     </section>
         </main>
 
@@ -126,12 +158,14 @@
                 <section>
 
                     <h2>Informações de contato</h2>
-                    <p>Facebook: 
-                        <a href="https://facebook.com/mozilla">https://facebook.com/mozilla</a>
-                    </p>
-                    <p>Twitter:
-                        <a href="https://twitter.com/mozilla">https://twitter.com/mozilla</a>
-                    </p>
+                    <address>
+                        <p>Facebook: 
+                            <a href="https://facebook.com/mozilla">https://facebook.com/mozilla</a>
+                        </p>
+                        <p>Twitter:
+                            <a href="https://twitter.com/mozilla">https://twitter.com/mozilla</a>
+                        </p>
+                    </address>
                 </section>
                 
             </footer>
